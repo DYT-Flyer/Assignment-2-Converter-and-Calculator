@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unitconvert.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="514.0" layoutY="91.0" onAction="#handleButtonConvertAction" prefHeight="87.0" prefWidth="149.0" text="Convert" />
+      <Label fx:id="label1" layoutX="42.0" layoutY="95.0" text="Fahrenheit" />
+      <Label fx:id="label2" layoutX="42.0" layoutY="154.0" text="Celsius" />
+      <TextField fx:id="txtNum1" layoutX="132.0" layoutY="91.0" prefHeight="25.0" prefWidth="342.0" promptText="Ex: 64" />
+      <TextField fx:id="txtNum2" layoutX="132.0" layoutY="150.0" prefHeight="25.0" prefWidth="342.0" promptText="Ex: 17.78" />
+      <RadioButton fx:id="rbTemp" layoutX="43.0" layoutY="236.0" mnemonicParsing="false" onAction="#tempSelected" selected="true" text="Temperature">
+         <toggleGroup>
+            <ToggleGroup fx:id="Unit" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbHeight" layoutX="195.0" layoutY="236.0" mnemonicParsing="false" onAction="#heightSelected" text="Height" toggleGroup="$Unit" />
+      <RadioButton fx:id="rbWeight" layoutX="338.0" layoutY="236.0" mnemonicParsing="false" onAction="#weightSelected" text="Weight" toggleGroup="$Unit" />
+      <Label fx:id="label3" layoutX="475.0" layoutY="95.0" text="°F" />
+      <Label fx:id="label4" layoutX="475.0" layoutY="154.0" text="°C" />
+      <TextField fx:id="txtNum3" layoutY="416.0" prefHeight="25.0" prefWidth="150.0" promptText="txtNum3" visible="false" />
+      <Label fx:id="label5" text="Label 5" visible="false" />
+      <Button fx:id="buttonClear" layoutX="514.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleButtonClearAction" prefHeight="25.0" prefWidth="149.0" text="Clear" />
+    </children>
+</AnchorPane>
